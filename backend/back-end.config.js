@@ -6,6 +6,12 @@ module.exports = {
         "name": "JVG_BACK",
         "script": "npm",
         "args": "start",
+        "env": {
+            NODE_ENV: "production",
+            MONGO_URI: "",
+            SECRET: "",
+            SERVER_PORT: 9003
+        },
         "env_production": {
             NODE_ENV: "production",
             MONGO_URI: "",
