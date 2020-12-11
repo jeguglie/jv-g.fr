@@ -19,8 +19,7 @@ module.exports = {
             // GIT remote
             repo: "https://github.com/jeguglie/jv-g.fr.git",
             // path in the server
-            path: "/home/jvg/www/jv-g.fr/",
-            'post-deploy': "cd ${front_end_path} && rm -rf node_modules/ && npx webpack --env.REACT_APP_CUSTOM_NODE_ENV=production --env.REACT_APP_SERVER_PORT=9004 --progress --config ./webpack.config.js"
+            path: "/home/jvg/www/jv-g.fr/"
         }
     }
 }
