@@ -21,11 +21,11 @@ module.exports = {
             // path in the server
             path: "/home/jvg/www/jv-g.fr/",
             // Pre-setup command or path to a script on your local machine
-            // 'pre-setup': "npm install pm2 -g && pm2 update",
+            'pre-setup': "npm run build",
             // Post-setup commands or path to a script on the host machine
             // eg: placing configurations in the shared dir etc
             // 'post-setup': `sudo chown -R jvg:collab ${path} && sudo chmod -R g+w ${path}`,
-            'post-deploy': `cd ${front_end_path} && rm -rf node_modules/ && npm install && ` +
+            'post-deploy': `cd ${front_end_path} && rm -rf node_modules/ && ` +
                 "npm install && npm rebuild node-sass && npx webpack --env.REACT_APP_CUSTOM_NODE_ENV=production --env.REACT_APP_SERVER_PORT=9004 --progress --config ./webpack.config.js"
         }
     }
