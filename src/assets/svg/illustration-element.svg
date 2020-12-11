@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1056" height="792" viewBox="0 0 1056 792">
+  <defs>
+    <style>
+      .a, .b {
+        fill: none;
+        stroke: #dfe5eb;
+        stroke-width: 3px;
+      }
+
+      .b {
+        opacity: 0.47;
+        isolation: isolate;
+      }
+
+      .c {
+        fill: #dfe5eb;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="a" d="M393,174l78,170L230.4679,440.4269Z"/>
+    <path class="b" d="M534.003,479.8439,743.6339,649.1994,670.9029,411.31,812,443.7634,760.456,595.1445"/>
+    <path class="c" d="M401.263,610.944,423,571l13,60Z"/>
+  </g>
+</svg>

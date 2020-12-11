@@ -1,0 +1,303 @@
+.slider {
+  height: 100%;
+  margin-bottom: 38px;
+  position: relative;
+  & #particles {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    position: absolute;
+
+    & canvas {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  & .project {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+
+    & .gridContainer {
+      height: 530px;
+      position: relative;
+
+      & .leftProjectContainer {
+        & .leftProjectWrapper {
+          padding-top: 10px;
+        }
+        & .arrowNextContainer {
+          width: 100%;
+          position: relative;
+
+          & .arrowNextProject {
+            cursor: pointer;
+            z-index: 9;
+            transition: 0.1s ease-in-out;
+            text-align: right;
+            position: absolute;
+            top: 20px;
+            right: 0;
+            background-color: #110e3c61;
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            padding: 25px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+
+            svg {
+              width: 100%;
+              height: 100%;
+              fill: white;
+            }
+
+            &:hover {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        display: flex;
+        margin-top: -4em;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        & .title {
+          font-weight: 500;
+          font-size: 45px;
+          color: #110e3c;
+          opacity: 0;
+        }
+
+        & .description {
+          color: #455C80;
+          font-weight: 400;
+          font-size: 20px;
+          opacity: 0;
+
+
+        }
+      }
+
+      & .sliderImagesContainer {
+        height: 100%;
+        width: 100%;
+        position: relative;
+
+        & .sliderImages {
+          width: 130%;
+          position: absolute;
+          margin: auto;
+          top: 28%;
+          bottom: 0;
+          right: -300px;
+
+          & img {
+            height: 100%;
+          }
+        }
+
+        &.matcha {
+          & .sliderImages {
+            width: 140%;
+            top: 30%;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 991px) {
+  .slider {
+    & .project {
+      & .gridContainer {
+        & .leftProjectContainer {
+          margin-top: -1em;
+          & .arrowNextContainer .arrowNextProject {
+            position: relative !important;
+            width: 70px;
+            height: 70px;
+            padding: 20px;
+          }
+          & .title {
+            width: 300px;
+          }
+
+          & .description {
+            width: 300px;
+          }
+        }
+
+        & .sliderImagesContainer {
+          & .sliderImages {
+            width: 149% !important;
+            top: 55%;
+            right: -259px !important;
+          }
+
+          &.matcha {
+            & .sliderImages {
+              width: 170% !important;
+              top: 20%;
+
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    height: 856px;
+    & .project {
+      & #particles {
+        z-index: 0;
+        width: 140%;
+        height: 139%;
+        position: absolute;
+        left: -20%;
+
+        & canvas {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    & .project {
+      & .gridContainer {
+        & .sliderImagesContainer {
+          height: 90%;
+
+          & .sliderImages {
+            width: 159% !important;
+            right: -300px !important;
+            top: 25% !important;
+          }
+        }
+
+        & .leftProjectContainer {
+          margin-top: 4em;
+          flex-direction: row !important;
+          flex-wrap: nowrap !important;
+
+          & .arrowNextContainer .arrowNextProject {
+            position: relative !important;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .slider {
+    height: 706px;
+
+    & .project {
+      & .gridContainer {
+        height: 650px;
+
+        & .sliderImagesContainer {
+          height: 55% !important;
+
+          & .sliderImages {
+            top: 10% !important;
+            width: 170% !important;
+            right: -200px !important;
+          }
+
+          &.matcha {
+            & .sliderImages {
+              width: 190% !important;;
+              top: 5% !important;
+              right: -60% !important;
+            }
+          }
+        }
+
+        & .leftProjectContainer {
+          margin-top: 1em !important;
+          flex-direction: row !important;
+          flex-wrap: wrap !important;
+
+          & .title {
+            width: 100% !important;
+          }
+
+          & .description {
+            width: 100% !important;
+          }
+
+          & .arrowNextContainer .arrowNextProject {
+            width: 60px !important;
+            height: 60px !important;
+            padding: 18px !important;
+            position: relative !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 368px) {
+  .slider {
+    height: 656px;
+
+    & .project {
+      & .gridContainer {
+        height: 650px;
+
+        & .sliderImagesContainer {
+          height: 55% !important;
+
+          & .sliderImages {
+            width: 160% !important;
+            right: -200px !important;
+            top: 20% !important;
+          }
+
+          &.matcha {
+            & .sliderImages {
+              width: 190% !important;;
+              top: -20% !important;
+              right: -60% !important;
+            }
+          }
+        }
+
+        & .leftProjectContainer {
+          margin-top: 1em !important;
+          flex-direction: row !important;
+          flex-wrap: wrap !important;
+
+          & .title {
+            width: 100% !important;
+          }
+
+          & .description {
+            width: 100% !important;
+          }
+
+          & .arrowNextContainer .arrowNextProject {
+            width: 80px !important;
+            height: 80px !important;
+            padding: 25px !important;
+            position:absolute !important;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}

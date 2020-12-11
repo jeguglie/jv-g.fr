@@ -1,0 +1,22 @@
+@import "./projectSection";
+@import "./projectItem";
+@import "./projectOpen";
+@import './portfolioGrid';
+@import './slider';
+@import './keyframes';
+
+body {
+  font-family: 'Baloo 2', sans-serif !important;
+}
+#root {
+  overflow-x: hidden;
+
+}
+
+.selectDisable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}

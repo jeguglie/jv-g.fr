@@ -1,0 +1,43 @@
+.projectSection {
+  width: 100%;
+  height: 100%;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    height: 1440px;
+    background-image: url('./../svg/illustration-section.svg');
+    background-repeat: no-repeat;
+    opacity: 1;
+    background-size: cover;
+    left: 50%;
+    top: 0;
+    z-index: -5;
+    padding: 0;
+    background-position: center top;
+    transform: translate(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .projectSection {
+    &:after {
+      height: 2000px;
+      left: 50%;
+      top: -200px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  .projectSection {
+
+    &:after {
+      height: 2500px;
+      left: 50%;
+      top: -400px;
+    }
+  }
+}

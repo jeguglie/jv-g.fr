@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 346">
+  <defs>
+    <style>
+      .cls-1 {
+      fill: none;
+      stroke: #000;
+      stroke-linecap: round;
+      stroke-miterlimit: 10;
+      stroke-width: 11px;
+      }
+    </style>
+  </defs>
+  <path d="M172,19A154,154,0,0,1,280.8945,281.8945,154,154,0,0,1,63.1055,64.1055,152.9923,152.9923,0,0,1,172,19m0-11A165,165,0,1,0,337,173,165,165,0,0,0,172,8Z"/>
+  <g>
+    <line class="cls-1" x1="108.75" y1="236.25" x2="235.25" y2="109.75"/>
+    <line class="cls-1" x1="108.75" y1="109.75" x2="235.25" y2="236.25"/>
+  </g>
+</svg>

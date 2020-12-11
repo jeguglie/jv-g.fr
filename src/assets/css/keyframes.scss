@@ -1,0 +1,196 @@
+
+.fade-in-left {
+  opacity: 1 !important;
+  animation: fadeInLeft ease-in-out 0.4s;
+}
+
+
+.fade-in-left-grid {
+  opacity: 1 !important;
+  animation: fadeInLeftGrid ease-in-out 0.1s;
+}
+
+.fade-in-right {
+  opacity: 1 !important;
+  animation: fadeInRight ease-in-out 0.4s;
+}
+
+.fade-out-right {
+  opacity: 0 !important;
+  animation: fadeOutRight ease-in-out 0.4s;
+}
+
+.fade-in-down {
+  opacity: 1 !important;
+  animation: fadeInDown ease-in-out 0.4s;
+}
+
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(50px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px)
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@keyframes fadeInLeftGrid {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeftBadge {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes projectItem-Open {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}
+
+@keyframes thumbnails-reveal {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes projectImage-Open {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes projectImage-Close {
+  from {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-60px);
+  }
+}
+
+
+@keyframes projectOpen-Open {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1
+  }
+}
+
+@keyframes projectOpen-Close {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}
+
+@keyframes portfolio-reveal {
+  0% {
+    transform: translateY(60px);
+
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes portfolioGridreveal {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1 !important;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-13px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
