@@ -10,7 +10,7 @@ module.exports = {
         // "production" is the environment name
         production: {
             // SSH key path, default to $HOME/.ssh
-            key: '/Users/jv/.ssh/id_rsa',
+            key: '/Users/jvg/.ssh/id_rsa',
             user: "jvg",
             host: ["jv-g.fr"],
             ssh_options: "StrictHostKeyChecking=no",
