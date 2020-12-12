@@ -1,5 +1,3 @@
-const front_end_path = '/home/jvg/www/jv-g.fr/';
-
 module.exports = {
     "apps": [{
         "name": "JVG",
