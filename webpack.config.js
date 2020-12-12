@@ -1,6 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const path = require('path');
 
 module.exports = {
@@ -59,12 +58,11 @@ module.exports = {
                         loader: 'image-webpack-loader',
                         options: {
                             mozjpeg: {
-                                quality: 100,
+                                quality: 90,
                                 progressive: true,
                             },
-                            // optipng.enabled: false will disable optipng
                             optipng: {
-                                enabled: false,
+                                enabled: true,
                             },
                             pngquant: {
                                 quality: [0.65, 0.90],
@@ -73,7 +71,6 @@ module.exports = {
                             gifsicle: {
                                 interlaced: false,
                             },
-                            // the webp option will enable WEBP
                             webp: {
                                 quality: 75
                             }
@@ -93,7 +90,6 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({template: './public/index.html'}),
-        new CleanWebpackPlugin(),
     ],
     output: {
         path: path.resolve(__dirname, 'dist'),
