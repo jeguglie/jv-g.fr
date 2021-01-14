@@ -17,7 +17,7 @@ const projectImage = {
 }
 
 
-const ProjectItem = ({projectName, desc, title, type, technos, activeImageFullscreen, handleActiveImageFullscreen, backgroundSvg}) => {
+const ProjectItem = ({projectName, desc, title, type, technos, activeImageFullscreen, handleActiveImageFullscreen, demo, backgroundSvg}) => {
 
     // Project opener
     const [openProject, setOpenProject] = useState(false)
@@ -80,6 +80,7 @@ const ProjectItem = ({projectName, desc, title, type, technos, activeImageFullsc
                         <div className='d-flex align-items-center mb-3 mt-2'>
                             <div><h3 className='title'>{title}</h3></div>
                             <div className='badgeProject'>{type}</div>
+                            {demo ? <div className='badgeProjectDemo'>Demo</div> : null}
                         </div>
                         <p className={`${startAnimationItems.description ? 'fade-in-left' : ''}`}>{desc}</p>
                         {startAnimationItems.technobadges && <TechnoBadges technos={technos}/>}

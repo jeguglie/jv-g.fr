@@ -9,6 +9,7 @@ const Home = () => {
                 <PortfolioGrid />
                 {/*<TopHome />*/}
             {/*<div style={{marginBottom: '400px'}} />*/}
+
         </React.Fragment>
     )
 };

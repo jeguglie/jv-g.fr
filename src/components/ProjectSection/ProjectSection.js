@@ -6,22 +6,26 @@ const projects = {
     matcha: {
         title: 'MatchApp',
         type: 'Cursus 42',
+        demo: 'https://matcha.jv-g.fr',
         technos: ['react', 'nodejs', 'semantic', 'webpack', 'mysql'],
         description: 'MatchApp est une application web de rencontres, permettant à deux potentielles âmes soeurs de se rencontrer, de l’inscription au contact final. '
     },
     hypertube: {
         title: 'Hypertube',
         type: 'Cursus 42',
+        demo: 'https://hypertube.jv-g.fr',
         technos: ['react', 'nodejs', 'materialui', 'webpack', 'mongodb'],
         description: 'Application web permettant à un utilisateur de rechercher et visionner des vidéos téléchargées au travers du protocole BitTorrent.'
     },
    esthelive: {
-        title: 'Maquette Esthelive',
+       demo: '',
+       title: 'Maquette Esthelive',
         type: 'Freelance',
         technos: ['photoshop', 'illustrator'],
         description: 'Maquette pré-développement qui consiste en la réalisation d’une plateforme sécurisée de téléconsultation entre médecins et patients dans le cadre d’opérations de chirurgie esthétique.'
     },
     camagru: {
+        demo: '',
         title: 'Camagru',
         type: 'Cursus 42',
         technos: ['PHP', 'mysql', 'MVC', 'nativejs'],
@@ -39,12 +43,14 @@ const ProjectSection = () => {
                         <ProjectItem
                             reverse={false}
                             projectName='hypertube'
+                            demo={projects.hypertube.demo}
                             title={projects.hypertube.title}
                             type={projects.hypertube.type}
                             technos={projects.hypertube.technos}
                             desc={projects.hypertube.description}
                         />
                         <ProjectItem
+                            demo={projects.matcha.demo}
                             reverse={false}
                             backgroundSvg={'matchaBackgroundSvg'}
                             projectName='matcha'
@@ -54,7 +60,8 @@ const ProjectSection = () => {
                             desc={projects.matcha.description}
                         />
                        <ProjectItem
-                            reverse={false}
+                           demo=''
+                           reverse={false}
                             backgroundSvg={''}
                             projectName='esthelive'
                             title={projects.esthelive.title}
@@ -63,6 +70,7 @@ const ProjectSection = () => {
                             desc={projects.esthelive.description}
                         />
                         <ProjectItem
+                            demo=''
                             reverse={false}
                             backgroundSvg={''}
                             projectName='camagru'
